@@ -34,6 +34,7 @@ async def on_message(message):
         unders = jsonData['TeamGameTrends'][2]['Unders']
         await message.channel.send('The ' + team + ' have hit the under in ' + str(unders) + ' of their last 10 games')
 
+        # last 10 home games
 
         
 
