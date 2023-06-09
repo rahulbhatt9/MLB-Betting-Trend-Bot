@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 
 
-bot = discord.Client(intents=discord.Intents.default())
+bot = discord.Client(intents = discord.Intents.all())
 
 def getLast10Games(jsonData, team):
     toReturn = "`"
