@@ -133,7 +133,7 @@ async def on_message(message):
     jsonData = json.loads(response.text)
     
     if message.content == "!tb help":
-        await message.channel.send("**MLB TrendBot Commands**\nFor Last 10 Games: `!tb.trends <TEAM ABBREVIATION>`\nFor Last 10 Home Games: `!tb.trends home <TEAM ABBREVIATION>`\nFor Last 10 Away Games: `!tb.trends away <TEAM ABBREVIATION>`\nFor Last 10 Games as a Favorite: `!tb.trends favorite <TEAM ABBREVIATION>\n`For Last 10 Games as an Underdog: `!tb.trends underdog <TEAM ABBREVIATION>`")
+        await message.channel.send("**MLB TrendBot Commands**\nFor Last 10 Games: `!tb trends <TEAM ABBREVIATION>`\nFor Last 10 Home Games: `!tb trends home <TEAM ABBREVIATION>`\nFor Last 10 Away Games: `!tb trends away <TEAM ABBREVIATION>`\nFor Last 10 Games as a Favorite: `!tb trends favorite <TEAM ABBREVIATION>\n`For Last 10 Games as an Underdog: `!tb trends underdog <TEAM ABBREVIATION>`")
 
     elif (message.content.startswith('!tb trends home')):
         await message.channel.send(getLast10HomeGames(jsonData, team))
